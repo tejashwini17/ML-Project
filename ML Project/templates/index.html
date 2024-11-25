@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+​
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../static/style.css">
+​
+    <style>
+        .login {
+            top: 30%;
+            right:40%;
+            margin-right:50%;
+            text-align:center; 
+        }
+        .p{
+            font-family:Kristen ITC;
+        }
+        
+    </style>
+</head>
+<body style ="background-image: url('https://image.freepik.com/free-photo/pile-books-pencils-desk_1150-18055.jpg'); background-size: 100% 100%;background-repeat:no-repeat;background-size: cover;text-align:center;font-size: 24px;font-weight: 650;font-family:Kristen ITC;
+    font-size: 18px;">
+<h1>Students Performance in Exams</h1>
+<form action ="/login" method ="post">
+<p><label for ="gender"> Choose a Gender :</label>
+<select name ="g">
+<option  value = "female">female</option>
+<option  value ="male">male</option>
+</select></p>
+<p><label for ="race/ethnicity"> Choose a Race/Ethnicity :</label>
+<select name ="re">
+<option value = "group A">group A</option>
+<option value = "group B">group B</option>
+<option value = "group c">group C</option>
+<option value = "group D">group D</option>
+<option value = "group E">group E</option>
+</select></p>
+<p><label for ="parental level of education"> Choose a Parental Level of Education :</label>
+<select name ="edu">
+<option value = "bachelor's degree">bachelor's degree</option>
+<option value = "some college">some college</option>
+<option value = "master's degree">master's degree</option>
+<option value = "associate's degree">associate's degree </option>
+<option value = "high school">high school</option>
+<option value = "some high school">some high school</option>
+</select></p>
+<p><label for ="lunch"> Choose a Lunch :</label>
+<select  name ="d">
+<option value = "standard">standard</option>
+<option value = "free/reduced">free/reduced</option>
+</select></p>
+<p><label for ="test preparation course"> Choose a Test Preparation Course :</label>
+<select  name ="tpc">
+<option value ="none">none</option>
+<option value ="completed">completed</option>
+</select></p>
+<p>Enter Math Score</p>
+<p><input type = "text" name = "ms"/></p>
+<p>Enter Reading Score</p>
+<p><input type = "text" name = "rs"/></p>
+<p>Enter Writing Score</p>
+<p><input type = "text" name = "ws"/></p>
+<p><input type = "submit" value = "click"/></p>
+<p><b>{{y}}</b></p>
+</form>
+</body>
+</html>
+
+
